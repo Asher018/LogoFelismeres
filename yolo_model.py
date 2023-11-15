@@ -38,7 +38,7 @@ if image is not None:
     # kép berácsozása
     for j in range(y1, height, y2):
         box_h += 1
-        for i in range(x1, (width//12)*7, x2):
+        for i in range(x1, width, x2):
             box_w += 1
             if box_w <= box_width or box_h <= box_height:
                 cv2.rectangle(image, (i, j), (i + x2, j + y2), box_colors[0], box_thickness)
@@ -46,7 +46,7 @@ if image is not None:
                 print(i, j)
                 print(i + x2, j + y2)
 
-                img_box = image[i:i + x2, j:j + y2]
+                img_box = image[j:j + y2, i:i + x2]
                 h, w = img_box.shape[:2]
                 h2, w2 = image_logo.shape[:2]
 
@@ -58,12 +58,11 @@ if image is not None:
 
                 if min > float(result_split[1]):
                     min = float(result_split[1])
-                    min_x1 = i
-                    min_x2 = i + x2
-                    min_y1 = j
-                    min_y2 = j + y2
+                    min_x1 = j
+                    min_x2 = j + y2
+                    min_y1 = i
+                    min_y2 = i + x2
                     img_box2 = image[min_x1:min_x2, min_y1:min_y2]
-
 
     print(min)
     print('(x,y)=', min_x1, min_y1)
@@ -73,7 +72,6 @@ if image is not None:
 else:
     print(f"Error: {image_path}")
 
-
-# 3950.62
+# 2067.69
 # (x,y)= 300 200
 # (x2,y2)= 400 300
