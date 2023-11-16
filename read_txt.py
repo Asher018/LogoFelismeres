@@ -1,10 +1,10 @@
 import cv2
 import os
 
-image_folder = 'logos/mcdonalds'
+image_folder = 'logos/audi'
 output_folder = 'logos/output'
 
-bbox_file = 'logos/mcdonalds/mcdonalds.txt'
+bbox_file = 'logos/audi/audi.txt'
 
 box_colors = [(0, 0, 255)]
 box_thickness = 3
