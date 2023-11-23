@@ -27,4 +27,4 @@ apple_26.png, 649, 295, 707, 387, apple, 0
 apple_27.jpg, 469, 324, 540, 42, apple, 0
 apple_28.jpg, 334, 309, 393, 371, apple, 0
 apple_29.jpg, 938, 572, 1052, 713, apple, 0
-apple_30.jpg, 485, 327, 575, 399 apple, 0
+apple_30.jpg, 485, 327, 575, 399, apple, 0
