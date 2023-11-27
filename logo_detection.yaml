@@ -1,0 +1,26 @@
+path: ../logos
+train: train
+test: test
+
+# Reka: nem tudom mi kell ide nc-nek es names-nek, majd latod
+# kepzeshez: yolov5/data/models/yolov5s.yaml architectura a lekisebb, erdemes lehet ezt hasznalni
+#            hiperparamétereket: yolov5/data/hyps/hyp.scratch-low.yaml bővítőfájl
+
+nc: 2
+
+names:
+  0: logo
+  1: text
+
+
+# osztalyok szama (logo fajtak)
+
+logo_class: 6
+
+logos_names:
+  0: apple
+  1: audi
+  2: barilla
+  3: bmw
+  4: mcdonalds
+  5: nike

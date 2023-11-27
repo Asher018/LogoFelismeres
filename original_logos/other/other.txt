@@ -1,0 +1,12 @@
+other_1.png, 0, 0, 0, 0, other, 6
+other_2.png, 0, 0, 0, 0, other, 6
+other_3.jpg, 0, 0, 0, 0, other, 6
+other_4.jpg, 0, 0, 0, 0, other, 6
+other_5.png, 0, 0, 0, 0, other, 6
+other_6.jpeg, 0, 0, 0, 0, other, 6
+other_7.jpg, 0, 0, 0, 0, other, 6
+other_8.jpg, 0, 0, 0, 0, other, 6
+other_9.png, 0, 0, 0, 0, other, 6
+other_10.jpg, 0, 0, 0, 0, other, 6
+other_11.jpg, 0, 0, 0, 0, other, 6
+other_12.jpg, 0, 0, 0, 0, other, 6
