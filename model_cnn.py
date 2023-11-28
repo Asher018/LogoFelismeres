@@ -15,6 +15,7 @@ def center(start, end):
     center_pont = (end - start) // 2
     return start + center_pont
 
+
 image_folder = 'logos/images'
 output_folder = 'logos/output'
 

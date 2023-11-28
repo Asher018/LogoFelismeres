@@ -3,7 +3,7 @@ import numpy as np
 import os
 
 
-images_path = "logos/bmw"
+images_path = "original_logos/bmw"
 image_width = 1000
 image_height = 1000
 

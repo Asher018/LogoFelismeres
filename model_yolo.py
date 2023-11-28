@@ -9,6 +9,7 @@ def center(start, end):
     center_pont = (end - start) // 2
     return start + center_pont
 
+
 # train es test kepek es labelek kulon folderekbe
 def copy(split, path):
     if not os.path.isdir(path):
