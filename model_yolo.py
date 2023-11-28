@@ -26,6 +26,8 @@ train_logos = 'logos/train/images/'
 train_labels = 'logos/train/labels/'
 test_logos = 'logos/test/images/'
 test_labels = 'logos/test/labels/'
+val_logos = 'logos/val/images/'
+val_labels = 'logos/val/labels/'
 
 j = 0
 label_list = []
@@ -77,8 +79,11 @@ cv2.destroyAllWindows()
 
 # a kepek es labelek tanito- es teszthalmazra bontasa
 img_train, img_test, label_train, label_test = train_test_split(image_list, label_list, test_size=0.2, random_state=1)
+img_val, img_test, label_val, label_test = train_test_split(img_test, label_test, test_size=0.5, random_state=1)
 
 copy(img_train, train_logos)
 copy(img_test, test_logos)
+copy(img_val, val_logos)
 copy(label_train, train_labels)
 copy(label_test, test_labels)
+copy(label_val, val_labels)

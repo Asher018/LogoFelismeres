@@ -44,10 +44,10 @@ for line in lines:
 
             center_x = center(x0, x1)
             center_y = center(y0, y1)
-            rec_x0 = math.floor(center_x - 50)
-            rec_x1 = math.floor(center_x + 50)
-            rec_y0 = math.floor(center_y - 50)
-            rec_y1 = math.floor(center_y + 50)
+            rec_x0 = math.floor(center_x - 60)
+            rec_x1 = math.floor(center_x + 60)
+            rec_y0 = math.floor(center_y - 60)
+            rec_y1 = math.floor(center_y + 60)
 
             image2 = image[rec_y0:rec_y1, rec_x0:rec_x1]
             label_list.append(label_number)
@@ -68,7 +68,7 @@ label_np = np.array(label_list)
 # CNN konvolúciós neurális hálózat
 model = models.Sequential()
 # egy konvolúciós réteg egy 3x3-as szűrővel
-model.add(layers.Conv2D(32, (3, 3), activation=relu, input_shape=(100, 100, 3)))
+model.add(layers.Conv2D(32, (3, 3), activation=relu, input_shape=(120, 120, 3)))
 # egy maximumkiválasztás egy 2x2-es sablont használva
 model.add(layers.MaxPooling2D((2, 2)))
 model.add(layers.Conv2D(64, (3, 3), activation=relu))
