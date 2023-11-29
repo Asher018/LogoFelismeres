@@ -44,7 +44,7 @@ for line in lines:
     image_list.append(image_path)
 
     if image is not None:
-        img_width, img_height, img_depth = image.shape
+        img_height, img_width, img_depth = image.shape
 
         for i in range(1, len(parts), 6):
             x0, y0, x1, y1, label, label_number = map(str.strip, parts[i:i + 6])
