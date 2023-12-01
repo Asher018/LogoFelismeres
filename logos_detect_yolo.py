@@ -6,7 +6,7 @@ command = [
     "python",
     "yolov5/detect.py",
     "--source",
-    "logos/reka_test/",
+    "logos/test/images/",
     "--weights",
     "yolov5/runs/train/yolo_logo_detect/weights/best.pt",
     "--conf",
