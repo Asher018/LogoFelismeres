@@ -1,11 +1,12 @@
-Futtasd le:
-git clone https://github.com/ultralytics/yolov5
-pip install -r yolov5/requirements.txt
+Futtatási sorrend:
+- yolov5_yaml.py
+- model_yolo.py
+- train_yolo.py
+- logo_detect_yolo.py / logos_detect_yolo.py
 
-A logo_detection.yaml fájlt helyezd a "yolov5/data/" mappába
+
 
 A yolo_train mappában található train file-t pedig a "yolov5/runs/" mappába
-
 Git támogatott verzió:
 git version 2.31.1.
 
