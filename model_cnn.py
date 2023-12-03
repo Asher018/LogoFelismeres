@@ -1,11 +1,8 @@
-#import tensorflow as tf
-
 from keras import layers, models
 from keras.src.activations import relu, softmax
 
 import cv2
 import os
-import numpy as np
 import math
 
 
@@ -60,9 +57,6 @@ for line in lines:
 
 cv2.destroyAllWindows()
 
-image2 = image2 / 255.0
-class_names = ['apple', 'audi', 'barilla', 'bmw', 'mcdonalds', 'nike']
-label_np = np.array(label_list)
 
 # CNN konvolúciós neurális hálózat
 model = models.Sequential()
@@ -77,6 +71,6 @@ model.add(layers.Conv2D(64, (3, 3), activation=relu))
 model.add(layers.Flatten())
 # 64 db neuront hoz létre
 model.add(layers.Dense(64, activation=relu))
-# a 7-ből melyik osztalyba tartozik a logo
-model.add(layers.Dense(6, activation=softmax))
+# a 4-ből melyik osztalyba tartozik a logo
+model.add(layers.Dense(4, activation=softmax))
 model.summary()
