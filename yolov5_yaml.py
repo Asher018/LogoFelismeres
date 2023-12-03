@@ -1,12 +1,11 @@
 import os.path
-import runpy
 
 from git import Repo
 
 
 def write_to_file():
     f = open("yolov5/data/logo_detection.yaml", 'w')
-    f.write("path: ../logos \ntrain: train \ntest: test \n\nlogo_class: 6 \n\nlogos_names: \n 0: apple \n 1: audi \n" +
+    f.write("path: ../logos \ntrain: train \ntest: test \nval: val \n\nnc: 6 \n\nnames: \n 0: apple \n 1: audi \n" +
             " 2: barilla \n 3: bmw \n 4: mcdonalds \n 5: nike")
     f.close()
 
