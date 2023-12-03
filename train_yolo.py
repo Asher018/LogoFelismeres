@@ -4,7 +4,7 @@ command = [
     "python",
     "yolov5/train.py",
     "--img",
-    "106",
+    "640",
     "--cfg",
     "yolov5s.yaml",
     "--hyp",
