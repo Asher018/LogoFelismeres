@@ -2,7 +2,6 @@
 
 from keras import layers, models
 from keras.src.activations import relu, softmax
-import matplotlib.pyplot as plt
 
 import cv2
 import os
