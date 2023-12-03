@@ -3,6 +3,7 @@ Futtatási sorrend:
 - model_yolo.py
 - train_yolo.py
 - logo_detect_yolo.py / logos_detect_yolo.py
+- gui.py
 
 
 
